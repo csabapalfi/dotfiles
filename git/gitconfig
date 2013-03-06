@@ -1,0 +1,21 @@
+[user]
+	name = Csaba Palfi
+	email = csaba@palfi.me
+
+[github]
+	user = csabapalfi
+
+[color]
+	ui = auto
+
+[core]
+	excludesfile = /opt/boxen/config/git/gitignore
+
+[credential]
+	helper = /opt/boxen/bin/boxen-git-credential
+
+[hub]
+  protocol = https
+
+[push]
+	default = simple
