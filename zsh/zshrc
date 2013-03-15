@@ -42,6 +42,7 @@ alias findjava='find . -name "*.java" | xargs grep '
 alias e=subl
 alias ls='ls -1G'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport'
+alias sed=gsed
 
 
 ########################
