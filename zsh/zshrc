@@ -15,6 +15,7 @@ unsetopt correct_all
 ########################
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin
 export TDSVER=8.0
+export LC_ALL="en_US.UTF-8"
 
 ########################
 ## git aliases
