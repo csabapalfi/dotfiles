@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-script/install
+./install.sh
 ```
 
 Warning! Overwrites existing dotfiles.
