@@ -1,4 +1,8 @@
-for dotfile in  *
+SKIP="script README.md"
+
+for dotfile in *
 do
-  ln -sf $(pwd)/$dotfile ~/.$dotfile
+  if [[ ! *$dotfile* == $SKIP ]]; then
+    ln -sf $(pwd)/$dotfile ~/.$dotfile
+  fi
 done
