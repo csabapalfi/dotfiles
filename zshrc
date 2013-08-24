@@ -38,7 +38,7 @@ alias findjava='find . -name "*.java" | xargs grep '
 ########################
 ## aliases: other
 ########################
-alias e=subl
+alias e="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 alias ls='ls -1G'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport'
 alias sed=gsed
