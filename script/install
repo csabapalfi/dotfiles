@@ -2,7 +2,7 @@ SKIP="script README.md"
 
 for dotfile in *
 do
-  if [[ ! *$dotfile* == $SKIP ]]; then
+  if [[ ! "$SKIP" == *$dotfile* ]]; then
     ln -sf $(pwd)/$dotfile ~/.$dotfile
   fi
 done
