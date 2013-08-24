@@ -1,5 +1,4 @@
 for dotfile in  *
 do
- rm ~/.$dotfile
- ln -s $(pwd)/$dotfile ~/.$dotfile
+  ln -sf $(pwd)/$dotfile ~/.$dotfile
 done
