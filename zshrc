@@ -1,5 +1,3 @@
-# TODO: split this to multiple files and source them similarly to holman/dotfiles
-
 ########################
 ## oh-my-zsh
 ########################
@@ -52,8 +50,3 @@ alias serve="python -m SimpleHTTPServer"
 ## private stuff
 ########################
 [ -e ~/.localrc ] && source ~/.localrc
-
-########################
-## boxen
-########################
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
