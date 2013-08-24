@@ -1,7 +1,9 @@
 # My dotfiles
 
-## Install
+## Installation
 
 ```
 script/install
 ```
+
+Warning! Overwrites existing dotfiles.
