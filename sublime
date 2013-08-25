@@ -1,4 +1,6 @@
 {
-	"font_face": "Menlo",
-	"font_size": 15
+    "font_face": "Menlo",
+    "font_size": 15,
+    "translate_tabs_to_spaces": true,
+    "highlight_line": true
 }
