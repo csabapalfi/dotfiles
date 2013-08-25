@@ -6,3 +6,6 @@ done
 
 # link sublime config
 ln -sf ~/.sublime ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings
+
+# .osx
+~/.osx
