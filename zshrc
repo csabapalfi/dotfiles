@@ -11,7 +11,13 @@ unsetopt correct_all
 ########################
 ## environment variables
 ########################
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin
+
+export PATH=\
+/usr/local/bin:/usr/local/sbin:\
+/usr/bin:/usr/sbin:\
+/bin:/sbin:\
+$PATH
+
 export TDSVER=8.0
 export LC_ALL="en_US.UTF-8"
 
