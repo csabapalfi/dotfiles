@@ -19,6 +19,8 @@ export PATH=\
 /usr/local/Cellar/ruby/2.0.0-p247/bin\
 $PATH
 
+export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M"
+
 export TDSVER=8.0
 export LC_ALL="en_US.UTF-8"
 
