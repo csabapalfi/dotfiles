@@ -16,6 +16,7 @@ export PATH=\
 /usr/local/bin:/usr/local/sbin:\
 /usr/bin:/usr/sbin:\
 /bin:/sbin:\
+/usr/local/Cellar/ruby/2.0.0-p247/bin\
 $PATH
 
 export TDSVER=8.0
