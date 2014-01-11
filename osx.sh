@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # ~/.osx — http://mths.be/osx
  
 # Ask for the administrator password upfront
@@ -71,7 +73,6 @@ defaults write com.apple.terminal "Startup Window Settings" -string "csabapalfi"
 sudo pmset -a standbydelay 86400
 
 # Kill affected applications
-for app in "Dashboard" "Dock" "Finder" "SystemUIServer" "Terminal" "Transmission"; do
+for app in "Dashboard" "Dock" "Finder" "SystemUIServer"; do
     killall "$app" > /dev/null 2>&1
 done
-echo "Done. Note that some of these changes require a logout/restart to take effect."

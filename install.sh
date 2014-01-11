@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # link all files without dots in their name
 for file in `ls | sed "/\./d"`
 do
