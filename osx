@@ -62,8 +62,10 @@ defaults write com.apple.dock wvous-tr-modifier -int 0
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Terminal theme
-defaults write com.apple.terminal "Default Window Settings" -string "Homebrew"
-defaults write com.apple.terminal "Startup Window Settings" -string "Homebrew"
+open "${HOME}/dotfiles/csabapalfi.terminal"
+sleep 1 # Wait a bit to make sure the theme is loaded
+defaults write com.apple.terminal "Default Window Settings" -string "csabapalfi"
+defaults write com.apple.terminal "Startup Window Settings" -string "csabapalfi"
 
 # Set standby delay to 1 day to avoid waiting on wake-up
 sudo pmset -a standbydelay 86400
