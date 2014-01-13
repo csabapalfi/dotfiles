@@ -61,3 +61,5 @@ alias serve="python -m SimpleHTTPServer"
 ## private stuff
 ########################
 [ -e ~/.localrc ] && source ~/.localrc
+
+source /opt/boxen/env.sh
