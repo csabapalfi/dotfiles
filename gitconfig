@@ -10,6 +10,6 @@
 [push]
 	default = simple
 [credential]
-	helper = osxkeychain
+	helper = /opt/boxen/bin/boxen-git-credential
 [core]
-	excludesfile = /Users/cpalfi/.gitignore
+	excludesfile = /opt/boxen/config/git/gitignore
