@@ -3,5 +3,6 @@
     "font_size": 15,
     "translate_tabs_to_spaces": true,
     "highlight_line": true,
-    "draw_white_space": "all"
+    "draw_white_space": "all",
+    "open_files_in_new_window": false
 }
