@@ -11,20 +11,17 @@ unsetopt correct_all
 ########################
 ## environment variables
 ########################
-
 export PATH=\
 /usr/local/bin:/usr/local/sbin:\
 /usr/bin:/usr/sbin:\
 /bin:/sbin:\
 /usr/local/Cellar/ruby/2.0.0-p247/bin\
 $PATH
-
 export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M"
-
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
-
 export TDSVER=8.0
 export LC_ALL="en_US.UTF-8"
+
 
 ########################
 ## git aliases
@@ -46,6 +43,7 @@ alias findxml='find . -name "*.xml" | xargs grep '
 alias findivy='find . -name "ivy.xml" | xargs grep '
 alias findjava='find . -name "*.java" | xargs grep '
 
+
 ########################
 ## aliases: other
 ########################
@@ -62,4 +60,8 @@ alias serve="python -m SimpleHTTPServer"
 ########################
 [ -e ~/.localrc ] && source ~/.localrc
 
-source /opt/boxen/env.sh
+
+########################
+## boxen
+########################
+[ -e /opt/boxen/env.sh ] && source /opt/boxen/env.sh
