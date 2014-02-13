@@ -21,6 +21,7 @@ export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export TDSVER=8.0
 export LC_ALL="en_US.UTF-8"
+export DOCKER_HOST=localhost
 
 
 ########################
