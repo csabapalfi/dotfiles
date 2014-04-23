@@ -9,4 +9,9 @@ done
 # link sublime config
 ln -sf ~/.sublime ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings
 
+# file extensions
 duti ~/.duti
+
+# links to home and root
+rm ~/Desktop/home && ln -sf ~ ~/Desktop/home
+rm ~/root && ln -sf / ~/root
