@@ -1,8 +1,9 @@
 {
-    "font_face": "Menlo",
-    "font_size": 15,
-    "translate_tabs_to_spaces": true,
-    "highlight_line": true,
-    "draw_white_space": "all",
-    "open_files_in_new_window": false
+	"draw_white_space": "all",
+	"font_face": "Menlo",
+	"font_size": 15.0,
+	"highlight_line": true,
+	"open_files_in_new_window": false,
+	"translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true
 }
