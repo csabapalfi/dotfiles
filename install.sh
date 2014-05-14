@@ -15,3 +15,6 @@ duti ~/.duti
 # links to home and root
 rm ~/Desktop/home && ln -sf ~ ~/Desktop/home
 rm ~/root && ln -sf / ~/root
+
+# home/bin
+mkdir -p ~/bin

@@ -15,13 +15,9 @@ export PATH=\
 /usr/local/bin:/usr/local/sbin:\
 /usr/bin:/usr/sbin:\
 /bin:/sbin:\
-/usr/local/Cellar/ruby/2.0.0-p247/bin:\
-/opt/boxen/nodenv/versions/v0.10/bin:\
+~/bin:\
 $PATH
-export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
-export TDSVER=8.0
-export LC_ALL="en_US.UTF-8"
 export DOCKER_HOST=tcp://localhost:4243
 
 
@@ -50,6 +46,10 @@ alias serve="python -m SimpleHTTPServer"
 ## private stuff
 ########################
 [ -e ~/.localrc ] && source ~/.localrc
+
+########################
+## npm completion
+########################
 ###-begin-npm-completion-###
 #
 # npm command completion script
