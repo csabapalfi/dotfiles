@@ -12,10 +12,10 @@ unsetopt correct_all
 ## environment variables
 ########################
 export PATH=\
+~/bin:\
 /usr/local/bin:/usr/local/sbin:\
 /usr/bin:/usr/sbin:\
 /bin:/sbin:\
-~/bin:\
 $PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export DOCKER_HOST=tcp://localhost:4243
@@ -36,7 +36,7 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 ########################
 ## aliases: other
 ########################
-alias e="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+alias e="atom"
 alias ls='ls -1G'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport'
 alias sed=gsed
