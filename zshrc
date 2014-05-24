@@ -42,12 +42,25 @@ alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A
 alias sed=gsed
 alias fn='find . -name '
 alias serve="python -m SimpleHTTPServer"
+alias gpa=github-public-activity
 
 
 ########################
 ## private stuff
 ########################
 [ -e ~/.localrc ] && source ~/.localrc
+
+function github-public-activity {
+    LAST_PUBLIC_COMMIT=$(curl --silent  https://api.github.com/users/csabapalfi/events | grep created_at | sed -e "s/.* \"//" -e "s/T.*//"  | head -1)
+    TODAY=$(date +"%Y-%m-%d")
+
+    if [ "$LAST_PUBLIC_COMMIT" != "$TODAY" ]
+    then
+        echo "No public commit today!!"
+    else
+        echo "Relax. You contributed to open-source today."
+    fi
+}
 
 ########################
 ## npm completion
