@@ -18,7 +18,7 @@ export PATH=\
 /bin:/sbin:\
 $PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
-export DOCKER_HOST=tcp://localhost:4243
+export DOCKER_HOST=tcp://192.168.59.106:2375
 export TSL_AZ=docker
 
 
