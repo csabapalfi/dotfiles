@@ -4,7 +4,6 @@ plugins=(git brew python npm node)
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
-
 export PATH=\
 /usr/local/bin:\
 /usr/local/sbin:\
@@ -27,12 +26,12 @@ alias gm='git commit -m'
 alias gc='git checkout'
 alias gp='git push'
 alias gpr='git pull --rebase'
-alias l='ls -H1'
-alias ll='ls -Hal'
+alias l='ls -GH1'
+alias ll='ls -GHal'
 alias ls=l
 alias m=make
 alias mt='make test'
-alias ni='npm install'
+alias ni='npm install --save'
 alias nit=tsl-module-install
 alias s='"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"'
 alias sed=gsed
@@ -40,5 +39,5 @@ alias serve="python -m SimpleHTTPServer"
 
 
 function tsl-module-install {
-    npm install --save "git+ssh://git@github.com:TSLEducation/module-tsl-$1.git"
+    ni "git+ssh://git@github.com:TSLEducation/module-tsl-$1.git"
 }
