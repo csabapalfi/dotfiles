@@ -39,5 +39,5 @@ alias serve="python -m SimpleHTTPServer"
 
 
 function tsl-module-install {
-    ni "git+ssh://git@github.com:TSLEducation/module-tsl-$1.git"
+    ni "module-tsl-$1"
 }
