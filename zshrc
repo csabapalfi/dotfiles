@@ -4,6 +4,7 @@ plugins=(git brew python npm node)
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
+
 export PATH=\
 /usr/local/bin:\
 /usr/local/sbin:\
@@ -15,7 +16,6 @@ $PATH
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export DOCKER_HOST=tcp://192.168.59.103:2375
-export TSL_AZ=docker
 
 
 alias a=atom
