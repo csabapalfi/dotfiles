@@ -1,2 +1,4 @@
-com.sublimetext.2  public.plain-text all
-com.sublimetext.2  .xml all
+com.sublimetext.2 public.plain-text all
+com.sublimetext.2 .xml all
+org.videolan.vlc .avi all
+org.videolan.vlc .mp4 all
