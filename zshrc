@@ -43,3 +43,6 @@ alias serve="python -m SimpleHTTPServer"
 function tsl-module-install {
     ni "module-tsl-$1"
 }
+
+export NVM_DIR="/Users/csabapalfi/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
