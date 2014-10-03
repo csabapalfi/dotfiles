@@ -44,8 +44,15 @@ RemoteManagement
 .idea
 .gradle
 
+# vms/docker
+.boot2docker
+.dockercfg
+.ievms
+.vagrant.d
+VirtualBox VMs
 
 # work in progress
 csaba.palfi.me
 javascript-patterns
 tes
+.panamax
