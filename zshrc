@@ -18,6 +18,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export DOCKER_HOST=tcp://192.168.59.103:2375
 export GOPATH=$HOME/go
 export EDITOR=vim
+export GIT_EDITOR=vim
 
 
 alias a=atom
