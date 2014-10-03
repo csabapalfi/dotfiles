@@ -9,14 +9,41 @@ Pictures
 Public
 RemoteManagement
 .Trash
+.CFUserTextEncoding
 
-# shell
+# general
+.cache
+.config
+
+# security
+.openvpn-connect.json
+.netrc
+.boto
+.ssh
+
+# shell/history
 .zcompdump*
 .zhistory
 .zsh_history
 .bash_history
 .rediscli_history
 .dbshell
+.viminfo
+.lesshst
+
+# node
+.node-gyp
+.npm
+.npmrc
+.nvm
+.pm2
+
+# jvm/java
+.ivy2
+.m2
+.idea
+.gradle
+
 
 # work in progress
 csaba.palfi.me
