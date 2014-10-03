@@ -1,3 +1,4 @@
+# OSX
 Applications
 Downloads
 Documents
@@ -6,4 +7,14 @@ Movies
 Music
 Pictures
 Public
+RemoteManagement
 .Trash
+
+# zsh
+.zcompdump*
+.zhistory
+.zsh_history
+
+# work in progress
+csaba.palfi.me
+javascript-patterns
