@@ -1,0 +1,27 @@
+'exception-reporting':
+  'userId': '9f784ee9-89c5-efbb-f594-548d40ea79ed'
+'release-notes':
+  'viewedVersion': '0.89.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': '8dcc1f15d1e8b78bef777d19c57e9bc26fe0540f'
+'editor':
+  'showIndentGuide': true
+  'fontSize': 21
+  'tabLength': 4
+  'showInvisibles': true
+  'invisibles': {}
+'core':
+  'themes': [
+    'seti-ui'
+    'atom-dark-syntax'
+  ]
+  'ignoredNames': [
+    '.git'
+    '.svn'
+    '.DS_Store'
+  ]
+  'disabledPackages': [
+    'welcome'
+  ]

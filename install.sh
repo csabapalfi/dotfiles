@@ -18,3 +18,9 @@ rm ~/root && ln -sf / ~/root
 
 # home/bin
 mkdir -p ~/bin
+
+#link atom config
+for file in `find .atom -type f -depth 1`
+do
+  ln -sf $(pwd)/$file ~/$file
+done
