@@ -14,13 +14,14 @@ RemoteManagement
 # general
 .cache
 .config
+.local
 
 # security
 .openvpn-connect.json
 .netrc
 .boto
 .ssh
-keys
+.keys
 .password-store
 .gnupg
 
@@ -46,6 +47,8 @@ keys
 .m2
 .idea
 .gradle
+.android
+.lein
 
 # vms/docker
 .boot2docker
@@ -54,8 +57,28 @@ keys
 .vagrant.d
 VirtualBox VMs
 
+# other
+Dropbox
+.dropbox
+.vegas/genghisapp
+.pip
+.erlang.cookie
+.Xauthority
+.dir
+.lolcommits
+.heroku
+.gem
+.bundler
+.cups
+.dvdcss
+Desktop/stuff
+archive
+wiki
+
 # work in progress
 csaba.palfi.me
 javascript-patterns
 tes
 .panamax
+tap-growl
+wb14
