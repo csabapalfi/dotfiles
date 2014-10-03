@@ -20,6 +20,9 @@ RemoteManagement
 .netrc
 .boto
 .ssh
+keys
+.password-store
+.gnupg
 
 # shell/history
 .zcompdump*
