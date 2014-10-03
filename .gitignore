@@ -10,10 +10,13 @@ Public
 RemoteManagement
 .Trash
 
-# zsh
+# shell
 .zcompdump*
 .zhistory
 .zsh_history
+.bash_history
+.rediscli_history
+.dbshell
 
 # work in progress
 csaba.palfi.me
