@@ -34,6 +34,7 @@ RemoteManagement
 .dbshell
 .viminfo
 .lesshst
+.zsh-update
 
 # node
 .node-gyp
