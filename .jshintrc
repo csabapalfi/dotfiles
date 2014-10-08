@@ -1,4 +1,4 @@
-{   // See https://raw.githubusercontent.com/jshint/jshint/master/examples/.jshintrc and http://www.jshint.com/docs/options
+{
 
     "newcap"        : true,
     "maxdepth"      : 4,
