@@ -50,6 +50,7 @@ RemoteManagement
 .gradle
 .android
 .lein
+.zinc
 
 # vms/docker
 .boot2docker
