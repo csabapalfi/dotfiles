@@ -42,7 +42,7 @@ alias nit=tsl-module-install
 alias s='"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"'
 alias sed=gsed
 alias serve="python -m SimpleHTTPServer"
-
+alias v=vim
 
 function tsl-module-install {
     ni "module-tsl-$1"
