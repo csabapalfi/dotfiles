@@ -1,12 +1,11 @@
 'global':
-  'exception-reporting': {}
   'release-notes':
     'viewedVersion': '0.89.0'
-  'metrics': {}
   'editor':
     'fontSize': 22
     'tabLength': 4
     'showInvisibles': true
+    'invisibles': {}
   'core':
     'themes': [
       'seti-ui'
@@ -37,11 +36,4 @@
       'autoflow'
     ]
     'audioBeep': false
-  'emmet': {}
-  'tree-view': {}
-  'tabs': {}
-  'spell-check': {}
   'markdown-preview': {}
-  'linter-jshint': {}
-  'linter': {}
-  'fuzzy-finder': {}
