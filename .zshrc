@@ -24,6 +24,7 @@ export GIT_EDITOR=vim
 
 
 alias a=atom
+alias d=docker
 alias e=a
 alias ga='git add'
 alias gs='git status'
