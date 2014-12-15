@@ -11,11 +11,6 @@ RemoteManagement
 .Trash
 .CFUserTextEncoding
 
-# general
-.cache
-.config
-.local
-
 # security
 .openvpn-connect.json
 .netrc
@@ -35,13 +30,18 @@ RemoteManagement
 .viminfo
 .lesshst
 .zsh-update
+.config/hub
 
-# node
+# js
 .node-gyp
 .npm
 .npmrc
 .nvm
 .pm2
+.cache/bower
+.local/share/bower
+.config/browserify
+.config/configstore
 
 # jvm/java
 .ivy2
@@ -72,12 +72,18 @@ Dropbox
 .bundler
 .cups
 .dvdcss
+.vim
+.cache/fontconfig
+.config/git
+.config/hub
+.config/robomongo
 Desktop/stuff
 archive
 wiki
 
 # work in progress
 csaba.palfi.me
-javascript-patterns
 tes
-forks
+nodeschool
+cloudformer
+.config/bug-clinic
