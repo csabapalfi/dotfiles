@@ -1,16 +1,12 @@
-'global':
+'*':
   'release-notes':
     'viewedVersion': '0.89.0'
   'editor':
     'fontSize': 22
-    'tabLength': 4
     'showInvisibles': true
+    'tabLength': 4
     'invisibles': {}
   'core':
-    'themes': [
-      'seti-ui'
-      'atom-dark-syntax'
-    ]
     'ignoredNames': [
       '.git'
       '.svn'
@@ -34,5 +30,9 @@
       'exception-reporting'
       'background-tips'
       'autoflow'
+    ]
+    'themes': [
+      'seti-ui'
+      'atom-dark-syntax'
     ]
     'audioBeep': false
