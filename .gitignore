@@ -20,6 +20,9 @@ RemoteManagement
 .keys
 .password-store
 .gnupg
+.cache/keybase
+.config/keybase
+.local/share/keybase
 
 # shell/history
 .zcompdump*
