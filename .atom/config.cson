@@ -36,3 +36,5 @@
       'atom-dark-syntax'
     ]
     'audioBeep': false
+  'linter-jshint': {}
+  'linter': {}
