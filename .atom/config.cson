@@ -1,40 +1,40 @@
-'*':
-  'release-notes':
-    'viewedVersion': '0.89.0'
-  'editor':
-    'fontSize': 22
-    'showInvisibles': true
-    'tabLength': 4
-    'invisibles': {}
-  'core':
-    'ignoredNames': [
-      '.git'
-      '.svn'
-      '.DS_Store'
+"*":
+  "release-notes":
+    viewedVersion: "0.89.0"
+  editor:
+    fontSize: 22
+    showInvisibles: true
+    tabLength: 4
+    invisibles: {}
+  core:
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
     ]
-    'disabledPackages': [
-      'welcome'
-      'wrap-guide'
-      'styleguide'
-      'release-notes'
-      'package-generator'
-      'metrics'
-      'link'
-      'language-xml'
-      'language-toml'
-      'language-text'
-      'language-ruby-on-rails'
-      'language-php'
-      'language-perl'
-      'feedback'
-      'exception-reporting'
-      'background-tips'
-      'autoflow'
+    disabledPackages: [
+      "welcome"
+      "wrap-guide"
+      "styleguide"
+      "release-notes"
+      "package-generator"
+      "metrics"
+      "link"
+      "language-xml"
+      "language-toml"
+      "language-text"
+      "language-ruby-on-rails"
+      "language-php"
+      "language-perl"
+      "feedback"
+      "exception-reporting"
+      "background-tips"
+      "autoflow"
     ]
-    'themes': [
-      'seti-ui'
-      'atom-dark-syntax'
+    themes: [
+      "seti-ui"
+      "atom-dark-syntax"
     ]
-    'audioBeep': false
-  'linter-jshint': {}
-  'linter': {}
+    audioBeep: false
+  "linter-jshint": {}
+  linter: {}
