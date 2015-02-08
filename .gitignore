@@ -61,6 +61,7 @@ RemoteManagement
 .dockercfg
 .vagrant.d
 VirtualBox VMs
+.wireshark/recent*
 
 # other
 Dropbox
