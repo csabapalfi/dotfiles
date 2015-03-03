@@ -23,6 +23,7 @@ RemoteManagement
 .cache/keybase
 .config/keybase
 .local/share/keybase
+.aws/credentials
 
 # shell/history
 .zcompdump*
