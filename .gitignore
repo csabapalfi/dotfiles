@@ -64,6 +64,8 @@ RemoteManagement
 VirtualBox VMs
 .wireshark/recent*
 .ansible
+.docker/machine
+.terraform.d
 
 # other
 Dropbox
