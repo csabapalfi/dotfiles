@@ -63,6 +63,7 @@ RemoteManagement
 .vagrant.d
 VirtualBox VMs
 .wireshark/recent*
+.ansible
 
 # other
 Dropbox
