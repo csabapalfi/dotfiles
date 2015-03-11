@@ -38,3 +38,6 @@
     audioBeep: false
   "linter-jshint": {}
   linter: {}
+".source.yaml":
+  editor:
+    tabLength: 2
