@@ -46,6 +46,3 @@ alias serve="python -m SimpleHTTPServer"
 alias v=vim
 
 alias packer='docker run --rm -t -v $(pwd):/data -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY lalyos/packer'
-
-export NVM_DIR="/Users/csabapalfi/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"

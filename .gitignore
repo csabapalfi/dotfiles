@@ -42,7 +42,6 @@ keys.sh
 .node-gyp
 .npm
 .npmrc
-.nvm
 .pm2
 .cache/bower
 .local/share/bower
@@ -90,9 +89,5 @@ Dropbox
 archive
 wiki
 .atom/.apm
-
-# work in progress
-csaba.palfi.me
-sky
 go
-hello-docker
+csaba.palfi.me
