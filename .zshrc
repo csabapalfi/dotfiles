@@ -46,3 +46,6 @@ alias serve="python -m SimpleHTTPServer"
 alias v=vim
 
 alias packer='docker run --rm -t -v $(pwd):/data -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY lalyos/packer'
+
+alias focus="sudo gsed -i '/#blocked/s/^#//' /etc/hosts"
+alias unfocus="sudo gsed -i '/#blocked/s/^/#/' /etc/hosts"
