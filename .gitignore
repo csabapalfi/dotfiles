@@ -70,7 +70,6 @@ VirtualBox VMs
 # other
 Dropbox
 .dropbox
-.vegas/genghisapp
 .pip
 .erlang.cookie
 .Xauthority
@@ -86,8 +85,9 @@ Dropbox
 .config/git
 .config/hub
 .config/robomongo
-archive
-wiki
 .atom/.apm
 go
 csaba.palfi.me
+palfi.co.uk
+.brooklyn
+cloudsoft
