@@ -32,7 +32,12 @@
         "feedback",
         "exception-reporting",
         "background-tips",
-        "autoflow"
+        "autoflow",
+        "language-jsx",
+        "bookmarks",
+        "encoding-selector",
+        "language-csharp",
+        "open-on-github"
       ],
       "themes": [
         "seti-ui",
@@ -41,7 +46,10 @@
       "audioBeep": false
     },
     "linter-jshint": {},
-    "linter": {}
+    "linter": {},
+    "autosave": {
+      "enabled": true
+    }
   },
   ".source.yaml": {
     "editor": {
