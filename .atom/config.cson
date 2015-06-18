@@ -5,8 +5,7 @@
     fontSize: 22
     showInvisibles: true
     tabLength: 4
-    invisibles:
-      {}
+    invisibles: {}
   core:
     ignoredNames: [
       ".git"
@@ -37,10 +36,8 @@
       "atom-dark-syntax"
     ]
     audioBeep: false
-  "linter-jshint":
-    {}
-  linter:
-    {}
+  "linter-jshint": {}
+  linter: {}
 ".source.yaml":
   editor:
     tabLength: 2
