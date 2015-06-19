@@ -49,6 +49,7 @@ keys.sh
 .config/configstore
 
 # jvm/java
+.IntelliJIdea14
 .ivy2
 .m2
 .idea
