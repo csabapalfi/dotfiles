@@ -40,7 +40,6 @@ alias mt='make test'
 alias ni='npm install --save'
 alias nid='npm install --save-dev'
 alias nit=tsl-module-install
-alias s='"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"'
 alias sed=gsed
 alias serve="python -m SimpleHTTPServer"
 alias v=vim
