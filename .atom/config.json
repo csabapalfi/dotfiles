@@ -49,6 +49,13 @@
     "linter": {},
     "autosave": {
       "enabled": true
+    },
+    "minimap": {
+      "plugins": {
+        "find-and-replace": true,
+        "git-diff": true,
+        "linter": true
+      }
     }
   },
   ".source.yaml": {
