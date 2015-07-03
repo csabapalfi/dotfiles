@@ -88,6 +88,8 @@ Google Drive
 .config/hub
 .config/robomongo
 .atom/.apm
+
+# work
 go
 csaba.palfi.me
 .brooklyn
@@ -95,3 +97,4 @@ clocker
 docker
 hello-docker-*
 go-by-example
+jclouds*
