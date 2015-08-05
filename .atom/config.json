@@ -46,7 +46,9 @@
       "audioBeep": false
     },
     "linter-jshint": {},
-    "linter": {},
+    "linter": {
+      "showErrorPanel": false
+    },
     "autosave": {
       "enabled": true
     },
