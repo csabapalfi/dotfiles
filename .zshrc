@@ -15,12 +15,10 @@ export PATH=\
 $PATH
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
-export DOCKER_CERT_PATH=/Users/csabapalfi/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.103:2376
 export GOPATH=$HOME/go
 export EDITOR=vim
 export GIT_EDITOR=vim
+eval "$(docker-machine env default)"
 
 
 alias a=atom
