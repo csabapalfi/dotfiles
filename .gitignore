@@ -13,7 +13,6 @@ RemoteManagement
 .DS_Store
 
 # security
-.openvpn-connect.json
 .netrc
 .boto
 .ssh
@@ -59,7 +58,6 @@ keys.sh
 .zinc
 
 # vms/docker
-.boot2docker
 .dockercfg
 .vagrant.d
 VirtualBox VMs
@@ -93,10 +91,4 @@ Google Drive
 go
 csaba.palfi.me
 palfi.co.uk
-.brooklyn
-brooklyn
-clocker
-docker
-hello-docker-*
 go-by-example
-jclouds*
