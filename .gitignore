@@ -49,13 +49,10 @@ keys.sh
 
 # jvm/java
 .IntelliJIdea14
-.ivy2
 .m2
 .idea
 .gradle
 .android
-.lein
-.zinc
 
 # vms/docker
 .dockercfg
