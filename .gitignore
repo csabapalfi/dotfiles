@@ -83,6 +83,7 @@ Google Drive
 .config/hub
 .config/robomongo
 .atom/.apm
+.electron
 
 # work
 go
