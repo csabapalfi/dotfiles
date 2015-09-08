@@ -40,12 +40,14 @@ keys.sh
 # js
 .node-gyp
 .npm
+.nvm
 .npmrc
 .pm2
 .cache/bower
 .local/share/bower
 .config/browserify
 .config/configstore
+.node_repl_history
 
 # jvm/java
 .IntelliJIdea14

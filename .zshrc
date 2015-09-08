@@ -46,3 +46,7 @@ alias packer='docker run --rm -t -v $(pwd):/data -e AWS_ACCESS_KEY_ID=$AWS_ACCES
 
 alias focus="sudo gsed -i '/#blocked/s/^#//' /etc/hosts"
 alias unfocus="sudo gsed -i '/#blocked/s/^/#/' /etc/hosts"
+
+export NVM_DIR="/Users/csabapalfi/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm use v4.0
