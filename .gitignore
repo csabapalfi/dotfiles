@@ -86,6 +86,7 @@ Google Drive
 .config/robomongo
 .atom/.apm
 .electron
+.htoprc
 
 # work
 csaba.palfi.me
