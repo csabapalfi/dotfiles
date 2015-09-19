@@ -33,7 +33,6 @@
         "exception-reporting",
         "background-tips",
         "autoflow",
-        "language-jsx",
         "bookmarks",
         "encoding-selector",
         "language-csharp",
@@ -46,9 +45,7 @@
       "audioBeep": false
     },
     "linter-jshint": {},
-    "linter": {
-      "showErrorPanel": false
-    },
+    "linter": {},
     "autosave": {
       "enabled": true
     },
@@ -58,6 +55,9 @@
         "git-diff": true,
         "linter": true
       }
+    },
+    "linter-eslint": {
+      "disableWhenNoEslintrcFileInPath": true
     }
   },
   ".source.yaml": {
