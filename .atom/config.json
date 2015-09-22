@@ -36,7 +36,8 @@
         "bookmarks",
         "encoding-selector",
         "language-csharp",
-        "open-on-github"
+        "open-on-github",
+        "minimap-find-and-replace"
       ],
       "themes": [
         "seti-ui",
