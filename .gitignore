@@ -45,9 +45,9 @@ keys.sh
 .pm2
 .cache/bower
 .local/share/bower
-.config/browserify
 .config/configstore
 .node_repl_history
+.greenkeeperrc
 
 # jvm/java
 .IntelliJIdea14
