@@ -16,7 +16,7 @@ $PATH
 export GOPATH=$HOME/go
 export EDITOR=vim
 export GIT_EDITOR=vim
-export NVM_DIR="/Users/csabapalfi/.nvm"
+export NVM_DIR=$HOME/.nvm
 
 
 alias a=atom
