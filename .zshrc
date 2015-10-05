@@ -36,7 +36,6 @@ alias ls=l
 alias sed=gsed
 alias serve="python -m SimpleHTTPServer"
 
-
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+source $NVM_DIR/nvm.sh
 nvm use v4
 eval $(dm env default)
