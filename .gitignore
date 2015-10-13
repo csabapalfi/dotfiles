@@ -49,13 +49,6 @@ keys.sh
 .node_repl_history
 .greenkeeperrc
 
-# jvm/java
-.IntelliJIdea14
-.m2
-.idea
-.gradle
-.android
-
 # vms/docker
 .dockercfg
 .vagrant.d
