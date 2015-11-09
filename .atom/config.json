@@ -6,8 +6,8 @@
     "editor": {
       "fontSize": 22,
       "showInvisibles": true,
-      "tabLength": 4,
-      "invisibles": {}
+      "invisibles": {},
+      "softWrap": true
     },
     "core": {
       "ignoredNames": [
