@@ -6,6 +6,7 @@ unsetopt correct_all
 
 
 export PATH=\
+~/go/bin:\
 /usr/local/bin:\
 /usr/local/sbin:\
 /usr/bin:\
