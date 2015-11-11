@@ -80,6 +80,8 @@ Google Drive
 .atom/.apm
 .electron
 .htoprc
+go
+.ipfs
 
 # wip
 csaba.palfi.me
