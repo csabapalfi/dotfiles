@@ -37,7 +37,8 @@
         "encoding-selector",
         "language-csharp",
         "open-on-github",
-        "minimap-find-and-replace"
+        "minimap-find-and-replace",
+        "autocomplete-snippets"
       ],
       "themes": [
         "seti-ui",
