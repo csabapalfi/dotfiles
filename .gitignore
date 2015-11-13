@@ -48,6 +48,7 @@ keys.sh
 .node_repl_history
 .greenkeeperrc
 .babel.json
+npm-debug.log
 
 # vms/docker
 .dockercfg
