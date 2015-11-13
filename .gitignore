@@ -47,6 +47,7 @@ keys.sh
 .config/sinopia
 .node_repl_history
 .greenkeeperrc
+.babel.json
 
 # vms/docker
 .dockercfg
