@@ -83,6 +83,7 @@ Google Drive
 .htoprc
 go
 .ipfs
+.cache
 
 # trainline
 .anyconnect
