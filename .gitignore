@@ -43,9 +43,8 @@ keys.sh
 .nvm
 .npmrc
 .pm2
-.cache/bower
-.local/share/bower
 .config/configstore
+.config/sinopia
 .node_repl_history
 .greenkeeperrc
 
@@ -82,6 +81,11 @@ Google Drive
 .htoprc
 go
 .ipfs
+
+# trainline
+.anyconnect
+.account
+trainline
 
 # wip
 csaba.palfi.me
