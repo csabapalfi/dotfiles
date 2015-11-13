@@ -1,13 +1,9 @@
 {
   "*": {
-    "release-notes": {
-      "viewedVersion": "0.89.0"
-    },
     "editor": {
       "fontSize": 22,
       "showInvisibles": true,
-      "invisibles": {},
-      "softWrap": true
+      "invisibles": {}
     },
     "core": {
       "ignoredNames": [
@@ -37,7 +33,6 @@
         "encoding-selector",
         "language-csharp",
         "open-on-github",
-        "minimap-find-and-replace",
         "autocomplete-snippets"
       ],
       "themes": [
@@ -46,25 +41,17 @@
       ],
       "audioBeep": false
     },
-    "linter-jshint": {},
-    "linter": {},
+    "linter": {
+      "showErrorPanel": false
+    },
     "autosave": {
       "enabled": true
     },
-    "minimap": {
-      "plugins": {
-        "find-and-replace": true,
-        "git-diff": true,
-        "linter": true
-      }
-    },
     "linter-eslint": {
       "disableWhenNoEslintrcFileInPath": true
-    }
-  },
-  ".source.yaml": {
-    "editor": {
-      "tabLength": 2
+    },
+    "tree-view": {
+      "hideVcsIgnoredFiles": false
     }
   }
 }
