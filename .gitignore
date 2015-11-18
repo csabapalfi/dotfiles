@@ -54,7 +54,7 @@ npm-debug.log
 .dockercfg
 .vagrant.d
 VirtualBox VMs
-.wireshark/recent*
+.wireshark
 .ansible
 .docker/machine
 .terraform.d
