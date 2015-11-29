@@ -112,3 +112,5 @@ map  <left>  <nop>
 imap <left>  <nop>
 map  <right> <nop>
 imap <right> <nop>
+" allow saving of files as sudo
+cmap w!! w !sudo tee > /dev/null %
