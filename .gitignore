@@ -78,6 +78,7 @@ Google Drive
 .config/hub
 .config/robomongo
 .atom/.apm
+.atom/blob-store
 .electron
 .htoprc
 go
