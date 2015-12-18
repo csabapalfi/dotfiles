@@ -6,42 +6,33 @@ Library
 Movies
 Music
 Pictures
-Public
-RemoteManagement
 .Trash
 .CFUserTextEncoding
 .DS_Store
 
 # security
-.netrc
-.boto
 .ssh
-.keys
-.password-store
 .gnupg
 .cache/keybase
 .config/keybase
 .local/share/keybase
 .aws/credentials
+.config/hub
 
 # shell/history
 .zcompdump*
 .zhistory
 .zsh_history
 .bash_history
-.rediscli_history
-.dbshell
 .viminfo
 .lesshst
 .zsh-update
-.config/hub
 
 # js
 .node-gyp
 .npm
 .nvm
 .npmrc
-.pm2
 .config/configstore
 .config/sinopia
 .node_repl_history
@@ -52,7 +43,6 @@ npm-debug.log
 # vms/docker
 .dockercfg
 .vagrant.d
-VirtualBox VMs
 .wireshark
 .ansible
 .docker/machine
@@ -65,18 +55,14 @@ Google Drive
 .pip
 .erlang.cookie
 .Xauthority
-.dir
-.lolcommits
-.heroku
 .gem
 .bundler
 .cups
-.dvdcss
+.heroku
 .vim
 .cache/fontconfig
 .config/git
 .config/hub
-.config/robomongo
 .atom/.apm
 .atom/blob-store
 .electron
