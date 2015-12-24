@@ -39,4 +39,5 @@ alias serve="python -m SimpleHTTPServer"
 
 source $NVM_DIR/nvm.sh
 nvm use v4
+eval "$(rbenv init -)"
 eval $(dm env default)
