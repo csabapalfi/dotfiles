@@ -71,11 +71,13 @@ go
 .ipfs
 .cache
 .rbenv
+.subversion
 
 # trainline
 .anyconnect
 .account
-trainline
+trainline*
+to-backup
 
 # wip
 TODO.md
