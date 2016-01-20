@@ -8,7 +8,7 @@
 [hub]
 	protocol = https
 [push]
-	default = matching
+	default = current
 [credential]
 	helper = osxkeychain
 [core]
