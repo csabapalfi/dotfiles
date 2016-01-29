@@ -72,6 +72,9 @@ go
 .cache
 .rbenv
 .subversion
+.oracle_jre_usage
+.rnd
+VirtualBox VMs
 
 # trainline
 .anyconnect
