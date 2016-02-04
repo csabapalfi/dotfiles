@@ -79,9 +79,8 @@ VirtualBox VMs
 # trainline
 .anyconnect
 .account
+.cisco
 trainline*
-to-backup
 
 # wip
-TODO.md
 csabapalfi.github.io
