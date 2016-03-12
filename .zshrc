@@ -4,8 +4,8 @@ plugins=(git brew python npm node)
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
-
 export PATH=\
+~/.npm-packages/bin:\
 ~/go/bin:\
 /usr/local/bin:\
 /usr/local/sbin:\
@@ -19,15 +19,11 @@ export EDITOR=vim
 export GIT_EDITOR=vim
 export NVM_DIR=$HOME/.nvm
 
-
-alias a=atom
-alias d=docker
-alias dc=docker-compose
-alias dm=docker-machine
-alias e=a
+alias e=atom
 alias ga='git add'
 alias gs='git status'
-alias gm='git commit -s -m'
+alias gm='git commit -m'
+alias gmn='git commit -n -m'
 alias gc='git checkout'
 alias gp='git push'
 alias gpr='git pull --rebase'
@@ -36,8 +32,3 @@ alias ll='ls -GHal'
 alias ls=l
 alias sed=gsed
 alias serve="python -m SimpleHTTPServer"
-
-source $NVM_DIR/nvm.sh
-nvm use v4
-eval "$(rbenv init -)"
-eval $(dm env default)
