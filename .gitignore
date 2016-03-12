@@ -18,6 +18,7 @@ Pictures
 .local/share/keybase
 .aws/credentials
 .config/hub
+.netrc
 
 # shell/history
 .zcompdump*
@@ -31,6 +32,7 @@ Pictures
 # js
 .node-gyp
 .npm
+.npm-packages
 .nvm
 .npmrc
 .config/configstore
@@ -75,6 +77,7 @@ go
 .oracle_jre_usage
 .rnd
 VirtualBox VMs
+.adobe/discover
 
 # trainline
 .anyconnect
