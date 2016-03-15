@@ -1,16 +1,10 @@
 {
   "*": {
-    "editor": {
-      "fontSize": 22,
-      "showInvisibles": true,
-      "invisibles": {}
+    "autosave": {
+      "enabled": true
     },
     "core": {
-      "ignoredNames": [
-        ".git",
-        ".svn",
-        ".DS_Store"
-      ],
+      "audioBeep": false,
       "disabledPackages": [
         "welcome",
         "wrap-guide",
@@ -35,17 +29,23 @@
         "open-on-github",
         "autocomplete-snippets"
       ],
+      "ignoredNames": [
+        ".git",
+        ".svn",
+        ".DS_Store"
+      ],
       "themes": [
         "seti-ui",
         "atom-dark-syntax"
-      ],
-      "audioBeep": false
+      ]
+    },
+    "editor": {
+      "fontSize": 22,
+      "invisibles": {},
+      "showInvisibles": true
     },
     "linter": {
       "showErrorPanel": false
-    },
-    "autosave": {
-      "enabled": true
     },
     "linter-eslint": {
       "disableWhenNoEslintrcFileInPath": true
