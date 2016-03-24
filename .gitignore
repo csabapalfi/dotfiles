@@ -28,6 +28,7 @@ Pictures
 .viminfo
 .lesshst
 .zsh-update
+.bash_sessions
 
 # js
 .node-gyp
