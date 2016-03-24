@@ -38,6 +38,7 @@ export EDITOR=vim
 export GIT_EDITOR=vim
 export NVM_DIR=$HOME/.nvm
 
+alias ..='cd ..'
 alias e=atom
 alias ga='git add'
 alias gs='git status'
