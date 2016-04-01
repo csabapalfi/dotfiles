@@ -1,5 +1,5 @@
 # prompt
-function git_clean () { return $(git status --porcelain | wc -l); }
+function git_clean () { return $(git status --porcelain 2>/dev/null | wc -l); }
 function git_branch () {
   echo $(git symbolic-ref HEAD 2>/dev/null | sed 's|refs/heads/||')
 }
