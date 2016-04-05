@@ -42,6 +42,7 @@ Pictures
 .greenkeeperrc
 .babel.json
 npm-debug.log
+.v8flags.*
 
 # vms/docker
 .dockercfg
