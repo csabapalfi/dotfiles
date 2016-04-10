@@ -13,7 +13,7 @@ export PS1="➜  \
 \[$red$bold\]\$(git_branch)\[$reset\] \
 \[$yellow$bold\]\$(git_clean || echo '✗ ')\[$reset\]"
 
-#general options
+# general options
 shopt -s checkwinsize
 
 # history
