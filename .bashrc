@@ -62,3 +62,15 @@ alias ll='ls -GHal'
 alias ls=l
 alias sed=gsed
 alias serve="python -m SimpleHTTPServer"
+
+# completions
+_gc()
+{
+    local cur=${COMP_WORDS[COMP_CWORD]}
+    local branches=$(git for-each-ref --format='%(refname)' | \
+      sed -e 's|refs/remotes/origin/||' -e 's|refs/heads/||' | \
+      tr '\n' ' ' \
+    )
+    COMPREPLY=( $(compgen -o default -W "$branches" -- $cur) )
+}
+complete -F _gc gc
