@@ -1,5 +1,0 @@
---color
---ignore-dir=node_modules
---ignore-dir=dist
---ignore-dir=public
---ignore-dir=coverage
