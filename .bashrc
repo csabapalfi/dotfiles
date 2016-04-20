@@ -33,6 +33,7 @@ bind '"\e[D": backward-char'
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PATH=\
+./node_modules/.bin:\
 ~/.npm-packages/bin:\
 ~/go/bin:\
 /usr/local/bin:\
