@@ -51,7 +51,7 @@
       "disableWhenNoEslintrcFileInPath": true
     },
     "tree-view": {
-      "hideVcsIgnoredFiles": false
+      "hideVcsIgnoredFiles": true
     }
   }
 }
