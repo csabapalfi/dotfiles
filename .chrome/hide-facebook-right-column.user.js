@@ -1,12 +1,21 @@
 // ==UserScript==
-// @name        Hide facebook right column
+// @name        Hide stuff in facebook right column
 // @include     https://www.facebook.com/*
 // @version     1.0.0
 // ==/UserScript==
 
-const hideRightCol = () =>
-  document.getElementById('rightCol').style.display = 'none',
+const hidden = [
+  'pagelet_trending_tags_and_topics',
+  'pagelet_ego_pane'
+]
 
-window.addEventListener('load', hideRightCol ,false);
+const hide = () => {
+  hidden.forEach(id =>
+    document.getElementById(id).style.display = 'none'
+  )
+  document.querySelectorAll('.home_right_column')[0].style.minHeight = 0
+}
 
-document.addEventListener('DOMNodeInserted', hideRightCol, false);
+window.addEventListener('load', hide ,false);
+
+document.addEventListener('DOMNodeInserted', hide, false);
