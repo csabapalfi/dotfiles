@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Hide stuff in facebook right column
+// @name        .chrome - facebook.com
 // @include     https://www.facebook.com/*
 // @version     1.0.0
 // ==/UserScript==
@@ -17,5 +17,4 @@ const hide = () => {
 }
 
 window.addEventListener('load', hide ,false);
-
 document.addEventListener('DOMNodeInserted', hide, false);
