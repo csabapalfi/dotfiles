@@ -7,9 +7,8 @@
 // ==/UserScript==
 
 window.addEventListener('load', () => {
-  Array.from(document.querySelectorAll('.list')).forEach(list => {
-    const count = list.querySelectorAll('.list-card').length;
-    const title = list.querySelectorAll('.list-header-name')[0];
-    title.textContent = `${title.textContent} (${count})`;
+  const cardCounts = document.querySelectorAll('.list-header-num-cards');
+  Array.from(cardCounts).forEach(cardCount => {
+    cardCount.classList.remove('hide');
   });
 }, false);
