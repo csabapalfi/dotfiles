@@ -21,14 +21,10 @@ Pictures
 .netrc
 
 # shell/history
-.zcompdump*
-.zhistory
-.zsh_history
 .bash_history
+.bash_sessions
 .viminfo
 .lesshst
-.zsh-update
-.bash_sessions
 
 # js
 .node-gyp
@@ -44,7 +40,7 @@ Pictures
 npm-debug.log
 .v8flags.*
 
-# vms/docker
+# devops
 .dockercfg
 .vagrant.d
 .wireshark
@@ -54,8 +50,8 @@ npm-debug.log
 
 # other
 Dropbox
-Google Drive
 .dropbox
+Google Drive
 .pip
 .erlang.cookie
 .Xauthority
@@ -86,7 +82,6 @@ VirtualBox VMs
 .account
 .cisco
 trainline*
-ttl*
 
 # wip
 csabapalfi.github.io/
