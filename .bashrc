@@ -19,7 +19,7 @@ shopt -s checkwinsize
 # history
 shopt -s histappend
 shopt -s cmdhist
-PROMPT_COMMAND='history -a'
+PROMPT_COMMAND='history -a; history -c; history -r'
 HISTSIZE=500000
 HISTFILESIZE=100000
 HISTCONTROL="erasedups:ignoreboth"
