@@ -47,6 +47,7 @@ npm-debug.log
 .ansible
 .docker/machine
 .terraform.d
+.local/share/heroku
 
 # other
 Dropbox
