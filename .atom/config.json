@@ -50,8 +50,6 @@
     "linter-eslint": {
       "disableWhenNoEslintrcFileInPath": true
     },
-    "tree-view": {
-      "hideVcsIgnoredFiles": true
-    }
+    "tree-view": {}
   }
 }
