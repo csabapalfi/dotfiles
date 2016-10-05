@@ -53,8 +53,6 @@ alias ..='cd ..'
 alias e=atom
 alias ga='git add'
 alias gs='git status'
-alias gm='git commit -m'
-alias gmn='git commit -n -m'
 alias gc='git checkout'
 alias gp='git push'
 alias gpr='git pull --rebase'
@@ -63,6 +61,10 @@ alias ll='ls -GHal'
 alias ls=l
 alias sed=gsed
 alias serve="python -m SimpleHTTPServer"
+
+function gm {
+  git commit -m "$*"
+}
 
 # completions
 _gc() {
