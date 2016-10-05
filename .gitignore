@@ -79,16 +79,9 @@ go
 VirtualBox VMs
 .adobe/discover
 
-# trainline
-.anyconnect
-.account
-.cisco
-trainline*
-
 # wip
-csabapalfi.github.io/
-barclays/
+blog/
 bankmail/
+histograms/
 to-backup/
-react-course/
 landingapp/
