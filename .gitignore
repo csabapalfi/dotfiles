@@ -79,12 +79,14 @@ go
 VirtualBox VMs
 .adobe/discover
 
-#homeaway
+# homeaway
 .account
 
 # wip
-blog/
-bankmail/
 awesome-histograms/
-to-backup/
+bankmail/
+create-readme-pages/
+csabapalfi.github.io/
+github-markdown-html/
 landingapp/
+to-backup/
