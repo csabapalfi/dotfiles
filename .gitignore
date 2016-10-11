@@ -27,6 +27,8 @@ Pictures
 .lesshst
 
 # js
+.yarn
+.yarn-cache
 .node-gyp
 .npm
 .npm-packages
