@@ -80,6 +80,7 @@ go
 .rnd
 VirtualBox VMs
 .adobe/discover
+.freeagent.json
 
 # homeaway
 .account
