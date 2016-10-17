@@ -42,6 +42,9 @@ Pictures
 npm-debug.log
 .v8flags.*
 
+# iOS
+.cocoapods
+
 # devops
 .dockercfg
 .vagrant.d
