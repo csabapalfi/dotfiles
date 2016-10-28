@@ -995,6 +995,13 @@ formatio@1.1.1:
   dependencies:
     samsam "~1.1"
 
+freeagent:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/freeagent/-/freeagent-1.0.0.tgz#840a64c9ade2c31210c037200806dc8af293ce55"
+  dependencies:
+    opn "^4.0.2"
+    request "^2.75.0"
+
 fs-exists-sync@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/fs-exists-sync/-/fs-exists-sync-0.1.0.tgz#982d6893af918e72d08dec9e8673ff2b5a8d6add"
@@ -2339,6 +2346,13 @@ opn@^3.0.2:
   dependencies:
     object-assign "^4.0.1"
 
+opn@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/opn/-/opn-4.0.2.tgz#7abc22e644dff63b0a96d5ab7f2790c0f01abc95"
+  dependencies:
+    object-assign "^4.0.1"
+    pinkie-promise "^2.0.0"
+
 optionator@^0.8.1:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/optionator/-/optionator-0.8.2.tgz#364c5e409d3f4d6301d6c0b4c05bba50180aeb64"
@@ -2697,7 +2711,7 @@ replace-ext@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-0.0.1.tgz#29bbd92078a739f0bcce2b4ee41e837953522924"
 
-request@^2.40.0:
+request@^2.40.0, request@^2.75.0:
   version "2.76.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.76.0.tgz#be44505afef70360a0436955106be3945d95560e"
   dependencies:
