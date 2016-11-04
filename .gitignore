@@ -30,6 +30,7 @@ Pictures
 .yarn
 .yarn-cache
 .yarn-config/global/node_modules
+.yarn-config/link
 .yo-rc-global.json
 .node-gyp
 .npm
