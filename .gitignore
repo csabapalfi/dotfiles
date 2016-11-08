@@ -93,6 +93,7 @@ VirtualBox VMs
 landingapp/
 
 # wip
+freeagent/
 freeagent-lint/
 bankmail/
 csabapalfi.github.io/
