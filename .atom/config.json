@@ -35,7 +35,7 @@
         ".DS_Store"
       ],
       "themes": [
-        "seti-ui",
+        "atom-dark-ui",
         "atom-dark-syntax"
       ]
     },
