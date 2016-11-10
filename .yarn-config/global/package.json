@@ -1,8 +1,6 @@
 {
   "dependencies": {
     "freeagent": "^1.0.0",
-    "generator-electrode": "^1.2.0",
-    "gulp": "^3.9.1",
-    "yo": "^1.8.5"
+    "gulp": "^3.9.1"
   }
 }
