@@ -19,6 +19,8 @@ Pictures
 .aws/credentials
 .config/hub
 .netrc
+.ngrok2/ngrok.yml
+
 
 # shell/history
 .bash_history
