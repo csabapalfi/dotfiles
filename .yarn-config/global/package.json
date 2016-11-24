@@ -2,6 +2,7 @@
   "dependencies": {
     "freeagent": "^1.0.0",
     "gron": "^4.1.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "ngrok": "^2.2.3"
   }
 }
