@@ -14,7 +14,10 @@ function timer_start {
 }
 
 function timer_stop {
-  timer_millis=$((($(gdate +%s%N) - $timer_start) / 1000000))
+  timer_sum=$((($(gdate +%s%N) - $timer_start) / 1000000))
+  timer_minutes=$(( $timer_sum / 60000 ))
+  timer_seconds=$(( $timer_sum / 1000 ))
+  timer_millis=$(( $timer_sum % 1000 ))
   unset timer_start
 }
 
@@ -27,7 +30,7 @@ cyan=$(tput setaf 6)
 bold=$(tput bold)
 reset=$(tput sgr0)
 export PS1="\
-✔ status \$? in \$(printf \"%'d\" \$timer_millis) ms \n\
+✔ status \$? in \$timer_minutes:\$(printf \"%02d\" \$timer_seconds).\$timer_millis (\${timer_sum}ms)\n\
 ➜ \
 \[$cyan$bold\]\W\[$reset\] \
 \[$red$bold\]\$(git_branch)\[$reset\] \
