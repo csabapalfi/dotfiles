@@ -28,25 +28,27 @@ bold=$(tput bold)
 reset=$(tput sgr0)
 
 function previous_command_status () {
-  if [ $? != 0 ]; then echo $red$bold"✗"$reset; else echo "✔"; fi
+  return $last_status
 }
 
-function setup_previous_command_timer () {
-  function timer_start () {
-    if [ -z "$timer_start" ]; then timer_start=$(date +%s%N); fi
-  }
-  trap 'timer_start' DEBUG
-
-  function timer_stop () {
-    timer_sum=$((($(date +%s%N) - $timer_start) / 1000000))
-    timer_minutes=$(( $timer_sum / 60000 ))
-    timer_seconds=$(( $timer_sum % 60000 / 1000 ))
-    timer_millis=$(( $timer_sum % 1000 ))
-    unset timer_start
-  }
-  PROMPT_COMMAND='timer_stop'
+function timer_start () {
+  if [ -z "$timer_start" ]; then timer_start=$(date +%s%N); fi
 }
-setup_previous_command_timer
+trap 'timer_start' DEBUG
+
+function grab_status () {
+  last_status=$?
+}
+
+function timer_stop () {
+  timer_sum=$((($(date +%s%N) - $timer_start) / 1000000))
+  timer_minutes=$(( $timer_sum / 60000 ))
+  timer_seconds=$(( $timer_sum % 60000 / 1000 ))
+  timer_millis=$(( $timer_sum % 1000 ))
+  unset timer_start
+}
+PROMPT_COMMAND="grab_status; history -a; history -c; history -r; timer_stop;"
+
 
 function previous_command_time {
   function format () {
@@ -68,7 +70,9 @@ function git_branch () {
 }
 
 export PS1="\n\
-\$(previous_command_status) \$(previous_command_time)\n\
+\[$red$bold\]\$(previous_command_status || echo '✗')\[$reset\]\
+\$(previous_command_status && echo '✔') \
+\[$gray$bold\]\$(previous_command_time)\[$reset\]\n\
 ➜ \
 \[$cyan$bold\]\W\[$reset\] \
 \[$red$bold\]\$(git_branch)\[$reset\] \
@@ -80,7 +84,6 @@ shopt -s checkwinsize
 # history
 shopt -s histappend
 shopt -s cmdhist
-PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 HISTSIZE=500000
 HISTFILESIZE=100000
 HISTCONTROL="erasedups:ignoreboth"
