@@ -41,23 +41,27 @@ function grab_status () {
 }
 
 function timer_stop () {
-  timer_sum=$((($(date +%s%N) - $timer_start) / 1000000))
-  timer_minutes=$(( $timer_sum / 60000 ))
-  timer_seconds=$(( $timer_sum % 60000 / 1000 ))
-  timer_millis=$(( $timer_sum % 1000 ))
+  timer_sum_millis=$((($(date +%s%N) - $timer_start) / 1000000))
   unset timer_start
 }
 PROMPT_COMMAND="grab_status; history -a; history -c; history -r; timer_stop;"
 
 
 function previous_command_time {
+  local minutes
+  local seconds
+  local millis
+  minutes=$(( $timer_sum_millis  / 60000 ))
+  seconds=$(( $timer_sum_millis % 60000 / 1000 ))
+  millis=$(( $timer_sum_millis % 1000 ))
+
   function format () {
     echo "$(printf "%0$1d" $2)"
   }
 
   echo -n "$gray$bold"
-  echo -n "$(format 2 $timer_minutes):$(format 2 $timer_seconds)"
-  echo -n ".$(format 3 $timer_millis) (${timer_sum}ms)"
+  echo -n "$(format 2 $minutes):$(format 2 $seconds).$(format 3 $millis)"
+  echo -n " (${timer_sum_millis}ms)"
   echo -n "$reset"
 }
 
@@ -110,7 +114,6 @@ $PATH
 export GOPATH=$HOME/go
 export EDITOR=vim
 export GIT_EDITOR=vim
-export NVM_DIR=$HOME/.nvm
 
 # completions
 _gc() {
