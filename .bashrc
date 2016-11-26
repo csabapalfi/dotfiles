@@ -3,7 +3,7 @@
 # prompt
 red=$(tput setaf 1)
 yellow=$(tput setaf 3)
-blue=$(tput setaf 3)
+gray=$(tput setaf 0)
 cyan=$(tput setaf 6)
 bold=$(tput bold)
 reset=$(tput sgr0)
@@ -35,8 +35,8 @@ function status_icon {
 trap 'timer_start' DEBUG
 PROMPT_COMMAND='timer_stop'
 
-export PS1="\
-\$(status_icon) \$(printf \"%02d\" \$timer_minutes):\$(printf \"%02d\" \$timer_seconds).\$(printf \"%03d\" \$timer_millis) (\${timer_sum}ms)\n\
+export PS1="\n\
+\$(status_icon) $gray$bold\$(printf \"%02d\" \$timer_minutes):\$(printf \"%02d\" \$timer_seconds).\$(printf \"%03d\" \$timer_millis) (\${timer_sum}ms)$reset\n\
 ➜ \
 \[$cyan$bold\]\W\[$reset\] \
 \[$red$bold\]\$(git_branch)\[$reset\] \
