@@ -23,7 +23,7 @@ function timer_start {
 function timer_stop {
   timer_sum=$((($(gdate +%s%N) - $timer_start) / 1000000))
   timer_minutes=$(( $timer_sum / 60000 ))
-  timer_seconds=$(( $timer_sum / 1000 ))
+  timer_seconds=$(( $timer_sum % 60000 / 1000 ))
   timer_millis=$(( $timer_sum % 1000 ))
   unset timer_start
 }
