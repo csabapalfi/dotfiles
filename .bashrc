@@ -1,6 +1,13 @@
 #!/usr/local/bin/bash
 
 # prompt
+red=$(tput setaf 1)
+yellow=$(tput setaf 3)
+blue=$(tput setaf 3)
+cyan=$(tput setaf 6)
+bold=$(tput bold)
+reset=$(tput sgr0)
+
 function git_clean () {
   return "$(git status --porcelain 2>/dev/null | wc -l)";
 }
@@ -21,16 +28,15 @@ function timer_stop {
   unset timer_start
 }
 
+function status_icon {
+  if [ $? != 0 ]; then echo $red$bold"✗"$reset; else echo "✔"; fi
+}
+
 trap 'timer_start' DEBUG
 PROMPT_COMMAND='timer_stop'
 
-red=$(tput setaf 1)
-yellow=$(tput setaf 3)
-cyan=$(tput setaf 6)
-bold=$(tput bold)
-reset=$(tput sgr0)
 export PS1="\
-✔ status \$? in \$timer_minutes:\$(printf \"%02d\" \$timer_seconds).\$timer_millis (\${timer_sum}ms)\n\
+\$(status_icon) \$(printf \"%02d\" \$timer_minutes):\$(printf \"%02d\" \$timer_seconds).\$(printf \"%03d\" \$timer_millis) (\${timer_sum}ms)\n\
 ➜ \
 \[$cyan$bold\]\W\[$reset\] \
 \[$red$bold\]\$(git_branch)\[$reset\] \
