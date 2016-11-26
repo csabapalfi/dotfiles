@@ -1,14 +1,34 @@
+#!/usr/local/bin/bash
+
 # prompt
-function git_clean () { return $(git status --porcelain 2>/dev/null | wc -l); }
-function git_branch () {
-  echo $(git symbolic-ref HEAD 2>/dev/null | sed 's|refs/heads/||')
+function git_clean () {
+  return "$(git status --porcelain 2>/dev/null | wc -l)";
 }
+
+function git_branch () {
+  echo "$(git symbolic-ref HEAD 2>/dev/null | sed 's|refs/heads/||')"
+}
+
+function timer_start {
+  if [ -z "$timer_start" ]; then timer_start=$(gdate +%s%N); fi
+}
+
+function timer_stop {
+  timer_millis=$((($(gdate +%s%N) - $timer_start) / 1000000))
+  unset timer_start
+}
+
+trap 'timer_start' DEBUG
+PROMPT_COMMAND='timer_stop'
+
 red=$(tput setaf 1)
 yellow=$(tput setaf 3)
 cyan=$(tput setaf 6)
 bold=$(tput bold)
 reset=$(tput sgr0)
-export PS1="➜  \
+export PS1="\
+✔ status \$? in \$(printf \"%'d\" \$timer_millis) ms \n\
+➜ \
 \[$cyan$bold\]\W\[$reset\] \
 \[$red$bold\]\$(git_branch)\[$reset\] \
 \[$yellow$bold\]\$(git_clean || echo '✗ ')\[$reset\]"
@@ -19,7 +39,7 @@ shopt -s checkwinsize
 # history
 shopt -s histappend
 shopt -s cmdhist
-PROMPT_COMMAND='history -a; history -c; history -r'
+PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 HISTSIZE=500000
 HISTFILESIZE=100000
 HISTCONTROL="erasedups:ignoreboth"
@@ -60,7 +80,8 @@ alias l='ls -GH1'
 alias ll='ls -GHal'
 alias ls=l
 alias sed=gsed
-alias serve="python -m SimpleHTTPServer"
+alias serve='python -m SimpleHTTPServer'
+alias time='gtime -f "%E"'
 
 function gm {
   git commit -m "$*"
