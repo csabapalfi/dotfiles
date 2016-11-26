@@ -16,11 +16,11 @@ function git_branch () {
   echo "$(git symbolic-ref HEAD 2>/dev/null | sed 's|refs/heads/||')"
 }
 
-function timer_start {
+function timer_start () {
   if [ -z "$timer_start" ]; then timer_start=$(gdate +%s%N); fi
 }
 
-function timer_stop {
+function timer_stop () {
   timer_sum=$((($(gdate +%s%N) - $timer_start) / 1000000))
   timer_minutes=$(( $timer_sum / 60000 ))
   timer_seconds=$(( $timer_sum % 60000 / 1000 ))
@@ -28,15 +28,26 @@ function timer_stop {
   unset timer_start
 }
 
-function status_icon {
+function previous_command_status () {
   if [ $? != 0 ]; then echo $red$bold"✗"$reset; else echo "✔"; fi
+}
+
+function previous_command_time {
+  function format () {
+    echo "$(printf "%0$1d" $2)"
+  }
+
+  echo -n "$gray$bold"
+  echo -n "$(format 2 $timer_minutes):$(format 2 $timer_seconds)"
+  echo -n ".$(format 3 $timer_millis) (${timer_sum}ms)"
+  echo -n "$reset"
 }
 
 trap 'timer_start' DEBUG
 PROMPT_COMMAND='timer_stop'
 
 export PS1="\n\
-\$(status_icon) $gray$bold\$(printf \"%02d\" \$timer_minutes):\$(printf \"%02d\" \$timer_seconds).\$(printf \"%03d\" \$timer_millis) (\${timer_sum}ms)$reset\n\
+\$(previous_command_status) \$(previous_command_time)\n\
 ➜ \
 \[$cyan$bold\]\W\[$reset\] \
 \[$red$bold\]\$(git_branch)\[$reset\] \
