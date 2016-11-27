@@ -20,6 +20,7 @@ function gm {
 }
 
 # prompt
+# TODO just construct PS1 in PROMPT_COMMAND
 red=$(tput setaf 1)
 yellow=$(tput setaf 3)
 gray=$(tput setaf 0)
