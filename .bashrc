@@ -23,7 +23,7 @@ function gm {
 # TODO just construct PS1 in PROMPT_COMMAND
 red=$(tput setaf 1)
 yellow=$(tput setaf 3)
-gray=$(tput setaf 0)
+gray=$(tput setaf 7)
 cyan=$(tput setaf 6)
 bold=$(tput bold)
 reset=$(tput sgr0)
