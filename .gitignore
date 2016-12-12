@@ -98,6 +98,7 @@ landingapp/
 # wip
 freeagent/
 freeagent-lint/
+eliminate-render-blocking/
 bankmail/
 csabapalfi.github.io/
 to-backup/
