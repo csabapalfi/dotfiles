@@ -32,8 +32,7 @@ Pictures
 # js
 .yarn
 .yarn-cache
-.config/yarn/global/node_modules
-.config/yarn/link
+.config/yarn/
 .yo-rc-global.json
 .node-gyp
 .npm
