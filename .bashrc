@@ -19,6 +19,12 @@ function gm {
   git commit -m "$*"
 }
 
+function ghp {
+  github-markdown-html
+  gh-pages -d . -s index.html
+  rm -rf index.html
+}
+
 # prompt
 # TODO just construct PS1 in PROMPT_COMMAND
 red=$(tput setaf 1)
