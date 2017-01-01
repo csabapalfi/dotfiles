@@ -31,6 +31,7 @@ Pictures
 
 # js
 .yarn
+.yarnrc
 .yarn-cache
 .config/yarn/
 .yo-rc-global.json
