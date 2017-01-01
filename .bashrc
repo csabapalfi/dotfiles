@@ -21,6 +21,7 @@ function gm {
 
 function ghp {
   github-markdown-html
+  rm -rf ~/.config/yarn/global/node_modules/gh-pages/.cache
   gh-pages -d . -s index.html
   rm -rf index.html
 }
