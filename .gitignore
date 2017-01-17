@@ -93,7 +93,7 @@ VirtualBox VMs
 
 # homeaway
 .account
-landingapp/
+landingapp*
 
 # wip
 freeagent/
