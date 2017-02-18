@@ -50,6 +50,13 @@
     "linter-eslint": {
       "disableWhenNoEslintrcFileInPath": true
     },
+    "linter-js-standard": {
+      "checkStyleDevDependencies": true
+    },
+    "standard-formatter": {
+      "checkStyleDevDependencies": true,
+      "formatOnSave": true
+    },
     "tree-view": {}
   }
 }

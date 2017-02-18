@@ -20,7 +20,7 @@ function gm {
 }
 
 function ghp {
-  github-markdown-html
+  github-markdown-html build
   rm -rf ~/.config/yarn/global/node_modules/gh-pages/.cache
   gh-pages -d . -s index.html
   rm -rf index.html

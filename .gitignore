@@ -97,11 +97,9 @@ VirtualBox VMs
 landingapp*
 
 # wip
-freeagent/
-freeagent-lint/
-eliminate-render-blocking/
 bankmail/
+transferwise/
+github-markdown-html/
 csabapalfi.github.io/
 to-backup/
 stuff/
-transferwise/
