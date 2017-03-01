@@ -34,10 +34,12 @@
         ".svn",
         ".DS_Store"
       ],
+      "telemetryConsent": "limited",
       "themes": [
         "atom-dark-ui",
         "atom-dark-syntax"
-      ]
+      ],
+      "useCustomTitleBar": true
     },
     "editor": {
       "fontSize": 21,
