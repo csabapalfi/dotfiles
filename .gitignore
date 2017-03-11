@@ -34,6 +34,7 @@ Pictures
 .yarnrc
 .yarn-cache
 .config/yarn/
+.standard-cache
 .yo-rc-global.json
 .node-gyp
 .npm
@@ -95,7 +96,8 @@ FlameGraph
 
 # homeaway
 .account
-landingapp*
+landingapp
+weathersvc
 
 # wip
 bankmail/
@@ -103,4 +105,3 @@ transferwise/
 github-markdown-html/
 csabapalfi.github.io/
 to-backup/
-stuff/
