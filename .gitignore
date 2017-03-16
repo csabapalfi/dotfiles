@@ -41,6 +41,7 @@ Pictures
 .npm-packages
 .nvm
 .npmrc
+.npmrc.bak
 .config/configstore
 .config/sinopia
 .node_repl_history
@@ -48,6 +49,7 @@ Pictures
 .babel.json
 npm-debug.log
 .v8flags.*
+.expo
 
 # iOS
 .cocoapods
