@@ -99,7 +99,7 @@ FlameGraph
 # homeaway
 .account
 landingapp
-weathersvc
+*-service
 
 # wip
 bankmail/
