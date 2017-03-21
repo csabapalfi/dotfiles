@@ -28,6 +28,7 @@ Pictures
 .viminfo
 .lesshst
 .hyper_plugins
+.psql_history
 
 # js
 .yarn
