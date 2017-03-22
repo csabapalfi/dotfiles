@@ -42,7 +42,7 @@ Pictures
 .npm-packages
 .nvm
 .npmrc
-.npmrc.bak
+.npmrcs
 .config/configstore
 .config/sinopia
 .node_repl_history
