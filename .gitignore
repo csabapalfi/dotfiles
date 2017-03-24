@@ -94,16 +94,15 @@ go
 VirtualBox VMs
 .adobe/discover
 .freeagent.json
-.reincubate
 FlameGraph
 
 # homeaway
 .account
 landingapp
-*-service
 
 # wip
 bankmail/
+node-measured/
 transferwise/
 github-markdown-html/
 csabapalfi.github.io/
