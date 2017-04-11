@@ -46,9 +46,7 @@
       "invisibles": {},
       "showInvisibles": true
     },
-    "linter": {
-      "showErrorPanel": false
-    },
+    "linter": {},
     "linter-eslint": {
       "disableWhenNoEslintrcFileInPath": true
     },
