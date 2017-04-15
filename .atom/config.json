@@ -39,7 +39,7 @@
         "atom-dark-ui",
         "atom-dark-syntax"
       ],
-      "useCustomTitleBar": true
+      "titleBar": "custom"
     },
     "editor": {
       "fontSize": 21,
