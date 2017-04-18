@@ -9,6 +9,7 @@
 	protocol = https
 [push]
 	default = current
+	followTags = true
 [credential]
 	helper = osxkeychain
 [core]
