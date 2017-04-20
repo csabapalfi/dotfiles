@@ -15,6 +15,33 @@ alias sed=gsed
 alias serve='python -m SimpleHTTPServer'
 alias date="gdate"
 
+function cd() {
+  debug() {
+    if [ "$DOTENVSH_DEBUG" = true ]; then
+      echo $1
+    fi
+  }
+
+  loadenv() {
+    debug "Loading $1"
+    for i in $(cat $1); do
+      # shellcheck disable=SC2163
+      export $i
+    done
+  }
+
+  builtin cd "$@"
+  ERR=$?
+
+  if [ $ERR -ne 0 ]; then
+     return $ERR;
+  fi
+
+  if [ -e .env ]; then
+    loadenv .env
+  fi
+}
+
 function gm {
   git commit -m "$*"
 }
