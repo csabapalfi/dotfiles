@@ -10,6 +10,11 @@ Pictures
 .CFUserTextEncoding
 .DS_Store
 
+# cloud/sync
+Dropbox
+.dropbox
+Google Drive
+
 # security
 .ssh
 .gnupg
@@ -62,11 +67,10 @@ npm-debug.log
 .docker/machine
 .terraform.d
 .local/share/heroku
+VirtualBox VMs
+go
 
 # other
-Dropbox
-.dropbox
-Google Drive
 .pip
 .erlang.cookie
 .Xauthority
@@ -83,17 +87,14 @@ Google Drive
 .atom/blob-store
 .electron
 .htoprc
-go
 .ipfs
 .cache
 .rbenv
 .subversion
 .oracle_jre_usage
 .rnd
-VirtualBox VMs
 .adobe/discover
 .freeagent.json
-FlameGraph
 
 # homeaway
 .account
@@ -102,7 +103,8 @@ landingapp
 # wip
 bankmail/
 node-measured/
-transferwise/
-github-markdown-html/
+transferwise-rates/
+probabilistic-systems/
+papertrail/
 csabapalfi.github.io/
 to-backup/
