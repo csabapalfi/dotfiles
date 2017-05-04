@@ -14,6 +14,8 @@ alias ls=l
 alias sed=gsed
 alias serve='python -m SimpleHTTPServer'
 alias date="gdate"
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 
 function cd() {
   debug() {
