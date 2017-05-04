@@ -54,7 +54,6 @@ function ghp {
 }
 
 # prompt
-# TODO just construct PS1 in PROMPT_COMMAND
 red=$(tput setaf 1)
 yellow=$(tput setaf 3)
 gray=$(tput setaf 7)
@@ -66,11 +65,6 @@ function previous_command_status () {
   return $last_status
 }
 
-function timer_start () {
-  if [ -z "$timer_start" ]; then timer_start=$(date +%s%N); fi
-}
-trap 'timer_start' DEBUG
-
 function grab_status () {
   last_status=$?
 }
@@ -79,26 +73,7 @@ function timer_stop () {
   timer_sum_millis=$((($(date +%s%N) - $timer_start) / 1000000))
   unset timer_start
 }
-PROMPT_COMMAND="grab_status; history -a; history -c; history -r; timer_stop;"
-
-
-function previous_command_time {
-  local minutes
-  local seconds
-  local millis
-  minutes=$(( $timer_sum_millis  / 60000 ))
-  seconds=$(( $timer_sum_millis % 60000 / 1000 ))
-  millis=$(( $timer_sum_millis % 1000 ))
-
-  function format () {
-    echo "$(printf "%0$1d" $2)"
-  }
-
-  echo -n "$gray$bold"
-  echo -n "$(format 2 $minutes):$(format 2 $seconds).$(format 3 $millis)"
-  echo -n " (${timer_sum_millis}ms)"
-  echo -n "$reset"
-}
+PROMPT_COMMAND="grab_status; history -a; history -c; history -r;"
 
 function git_clean () {
   return "$(git status --porcelain 2>/dev/null | wc -l)";
@@ -108,11 +83,9 @@ function git_branch () {
   echo "$(git symbolic-ref HEAD 2>/dev/null | sed 's|refs/heads/||')"
 }
 
-export PS1="\n\
+export PS1="\n \
 \[$red$bold\]\$(previous_command_status || echo '✗')\[$reset\]\
 \$(previous_command_status && echo '✔') \
-\[$gray$bold\]\$(previous_command_time)\[$reset\]\n\
-➜ \
 \[$cyan$bold\]\W\[$reset\] \
 \[$red$bold\]\$(git_branch)\[$reset\] \
 \[$yellow$bold\]\$(git_clean || echo '✗ ')\[$reset\]"
