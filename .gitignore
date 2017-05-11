@@ -55,6 +55,7 @@ Google Drive
 npm-debug.log
 .v8flags.*
 .expo
+.pkg-cache
 
 # iOS
 .cocoapods
