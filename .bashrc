@@ -1,5 +1,6 @@
 #!/usr/local/bin/bash
 
+##########
 # aliases
 alias ..='cd ..'
 alias e=atom
@@ -17,15 +18,10 @@ alias date="gdate"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 
+##########
+# functions
 function cd() {
-  debug() {
-    if [ "$DOTENVSH_DEBUG" = true ]; then
-      echo $1
-    fi
-  }
-
   loadenv() {
-    debug "Loading $1"
     for i in $(cat $1); do
       # shellcheck disable=SC2163
       export $i
@@ -48,13 +44,11 @@ function gm {
   git commit -m "$*"
 }
 
-function ghp {
-  github-markdown-html build
-  rm -rf ~/.config/yarn/global/node_modules/gh-pages/.cache
-  gh-pages -d . -s index.html
-  rm -rf index.html
+function port () {
+    sudo lsof -iTCP:$1 -sTCP:LISTEN
 }
 
+##########
 # prompt
 red=$(tput setaf 1)
 yellow=$(tput setaf 3)
@@ -92,9 +86,11 @@ export PS1="\n \
 \[$red$bold\]\$(git_branch)\[$reset\] \
 \[$yellow$bold\]\$(git_clean || echo '✗ ')\[$reset\]"
 
-# general options
+##########
+# bash options
 shopt -s checkwinsize
 
+##########
 # history
 shopt -s histappend
 shopt -s cmdhist
@@ -107,6 +103,7 @@ bind '"\e[B": history-search-forward'
 bind '"\e[C": forward-char'
 bind '"\e[D": backward-char'
 
+##########
 # env
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
@@ -125,6 +122,7 @@ export GOPATH=$HOME/go
 export EDITOR=vim
 export GIT_EDITOR=vim
 
+##########
 # completions
 _gc() {
   local cur=${COMP_WORDS[COMP_CWORD]}
