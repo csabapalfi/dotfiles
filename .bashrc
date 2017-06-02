@@ -121,6 +121,9 @@ $PATH
 export GOPATH=$HOME/go
 export EDITOR=vim
 export GIT_EDITOR=vim
+export NPM_PACKAGES="${HOME}/.npm-packages"
+unset MANPATH
+export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 ##########
 # completions
