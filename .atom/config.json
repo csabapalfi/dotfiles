@@ -53,6 +53,9 @@
     "linter-js-standard": {
       "checkStyleDevDependencies": true
     },
+    "prettier-atom": {
+      "useEslint": true
+    },
     "standard-formatter": {
       "checkStyleDevDependencies": true,
       "formatOnSave": true
