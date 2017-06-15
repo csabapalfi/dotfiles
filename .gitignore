@@ -72,6 +72,8 @@ VirtualBox VMs
 go
 
 # other
+.Rhistory
+.rstudio-desktop
 .pip
 .erlang.cookie
 .Xauthority
