@@ -56,6 +56,9 @@ npm-debug.log
 .v8flags.*
 .expo
 .pkg-cache
+.meteor*
+.now.json
+.vscode
 
 # iOS
 .cocoapods
@@ -70,6 +73,7 @@ npm-debug.log
 .local/share/heroku
 VirtualBox VMs
 go
+.docker/
 
 # other
 .Rhistory
@@ -98,6 +102,8 @@ go
 .rnd
 .adobe/discover
 .freeagent.json
+.3T
+.atom/github.cson
 
 # homeaway
 .account
@@ -112,3 +118,4 @@ probabilistic-systems/
 papertrail/
 csabapalfi.github.io/
 to-backup/
+perfradar*

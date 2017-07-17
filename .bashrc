@@ -117,6 +117,7 @@ export PATH=\
 /usr/sbin:\
 /bin:\
 /sbin:\
+~/.meteor:\
 $PATH
 export GOPATH=$HOME/go
 export EDITOR=vim
