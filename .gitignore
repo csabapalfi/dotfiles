@@ -107,7 +107,7 @@ go
 
 # homeaway
 .account
-landingapp
+landingapp*
 react-*
 
 # wip
