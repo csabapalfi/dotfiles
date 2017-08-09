@@ -75,6 +75,7 @@ npm-debug.log
 VirtualBox VMs
 go
 .docker/
+.config/wireshark
 
 # other
 .Rhistory
