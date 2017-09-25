@@ -1,5 +1,8 @@
 {
   "*": {
+    "atom-package-deps": {
+      "ignored": []
+    },
     "autosave": {
       "enabled": true
     },
@@ -53,7 +56,9 @@
     "linter-js-standard": {
       "checkStyleDevDependencies": true
     },
+    "linter-ui-default": {},
     "prettier-atom": {
+      "formatOnSaveOptions": {},
       "useEslint": true
     },
     "standard-formatter": {

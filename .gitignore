@@ -60,6 +60,8 @@ npm-debug.log
 .meteor*
 .now.json
 .vscode
+.babel-cache
+.atom/recovery
 
 # iOS
 .cocoapods
@@ -76,6 +78,8 @@ VirtualBox VMs
 go
 .docker/
 .config/wireshark
+.serverlessrc
+.serverless/cache
 
 # other
 .Rhistory
