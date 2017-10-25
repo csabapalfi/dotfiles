@@ -58,7 +58,9 @@
     },
     "linter-ui-default": {},
     "prettier-atom": {
-      "formatOnSaveOptions": {},
+      "formatOnSaveOptions": {
+        "showInStatusBar": true
+      },
       "useEslint": true
     },
     "standard-formatter": {
