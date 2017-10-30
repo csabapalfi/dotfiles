@@ -3,7 +3,7 @@
 ##########
 # aliases
 alias ..='cd ..'
-alias e=atom
+alias e=code
 alias ga='git add'
 alias gs='git status'
 alias gc='git checkout'
