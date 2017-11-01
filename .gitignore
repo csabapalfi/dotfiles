@@ -33,6 +33,7 @@ Google Drive
 .viminfo
 .lesshst
 .psql_history
+.python_history
 
 # js
 .yarn
