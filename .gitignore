@@ -116,6 +116,7 @@ go
 .account
 landing*
 react-*
+hapi-*
 
 # wip
 bankmail/
