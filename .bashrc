@@ -5,54 +5,18 @@
 alias ..='cd ..'
 alias e=code
 alias ga='git add'
-alias gs='git status'
 alias gc='git checkout'
+alias gm='git commit -m'
 alias gp='git push'
 alias gpr='git pull --rebase'
-alias l='ls -GH1'
+alias gs='git status'
+alias ls='ls -GH1'
 alias ll='ls -GHal'
-alias ls=l
-alias sed=gsed
-alias serve='python -m SimpleHTTPServer'
-alias date="gdate"
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
-
-##########
-# functions
-function cd() {
-  loadenv() {
-    for i in $(cat $1); do
-      # shellcheck disable=SC2163
-      export $i
-    done
-  }
-
-  builtin cd "$@"
-  ERR=$?
-
-  if [ $ERR -ne 0 ]; then
-     return $ERR;
-  fi
-
-  if [ -e .env ]; then
-    loadenv .env
-  fi
-}
-
-function gm {
-  git commit -m "$*"
-}
-
-function port () {
-    sudo lsof -iTCP:$1 -sTCP:LISTEN
-}
 
 ##########
 # prompt
 red=$(tput setaf 1)
 yellow=$(tput setaf 3)
-gray=$(tput setaf 7)
 cyan=$(tput setaf 6)
 bold=$(tput bold)
 reset=$(tput sgr0)
@@ -65,10 +29,6 @@ function grab_status () {
   last_status=$?
 }
 
-function timer_stop () {
-  timer_sum_millis=$((($(date +%s%N) - $timer_start) / 1000000))
-  unset timer_start
-}
 PROMPT_COMMAND="grab_status; history -a; history -c; history -r;"
 
 function git_clean () {
@@ -76,19 +36,20 @@ function git_clean () {
 }
 
 function git_branch () {
-  echo "$(git symbolic-ref HEAD 2>/dev/null | sed 's|refs/heads/||')"
+  echo "$(git symbolic-ref HEAD 2>/dev/null | sed -e 's|refs/heads/| |')"
 }
 
 export PS1="\n \
-\[$red$bold\]\$(previous_command_status || echo '✗')\[$reset\]\
-\$(previous_command_status && echo '✔') \
-\[$cyan$bold\]\W\[$reset\] \
-\[$red$bold\]\$(git_branch)\[$reset\] \
-\[$yellow$bold\]\$(git_clean || echo '✗ ')\[$reset\]"
+\[$red\]\$(previous_command_status || echo '✗')\[$reset\]\
+\$(previous_command_status && echo '✓') \
+\[$cyan$bold\]\W\[$reset\]\
+\[$red$bold\]\$(git_branch)\[$reset\]\
+\[$yellow\]\$(git_clean || echo ' ✗')\[$reset\] "
 
 ##########
 # bash options
 shopt -s checkwinsize
+set -o pipefail
 
 ##########
 # history
@@ -109,22 +70,16 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PATH=\
 ./node_modules/.bin:\
-~/.npm-packages/bin:\
-~/go/bin:\
 /usr/local/bin:\
 /usr/local/sbin:\
 /usr/bin:\
 /usr/sbin:\
 /bin:\
 /sbin:\
-~/.meteor:\
 $PATH
-export GOPATH=$HOME/go
+
 export EDITOR=vim
 export GIT_EDITOR=vim
-export NPM_PACKAGES="${HOME}/.npm-packages"
-unset MANPATH
-export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 ##########
 # completions

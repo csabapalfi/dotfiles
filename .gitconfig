@@ -13,4 +13,4 @@
 [credential]
 	helper = osxkeychain
 [core]
-	excludesfile = /Users/csabapalfi/.gitignore_global
+	excludesfile = /Users/csabapalfi/.gitignore
