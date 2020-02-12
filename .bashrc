@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/usr/bin/env bash
 
 ##########
 # aliases
@@ -22,7 +22,7 @@ bold=$(tput bold)
 reset=$(tput sgr0)
 
 function previous_command_status () {
-  return $last_status
+  return "$last_status"
 }
 
 function grab_status () {
@@ -36,7 +36,7 @@ function git_clean () {
 }
 
 function git_branch () {
-  echo "$(git symbolic-ref HEAD 2>/dev/null | sed -e 's|refs/heads/| |')"
+  git symbolic-ref HEAD 2>/dev/null | sed -e 's|refs/heads/| |'
 }
 
 export PS1="\n \
@@ -67,9 +67,16 @@ bind '"\e[D": backward-char'
 ##########
 # env
 export CLICOLOR=1
+export EDITOR=vim
+export GIT_EDITOR=vim
 export LSCOLORS=GxFxCxDxBxegedabagaced
+export NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH=\
+/usr/local/opt/python/libexec/bin:\
+/usr/local/opt/node@12/bin:\
+~/go/bin:\
 ./node_modules/.bin:\
+$NPM_PACKAGES/bin:\
 /usr/local/bin:\
 /usr/local/sbin:\
 /usr/bin:\
@@ -78,17 +85,29 @@ export PATH=\
 /sbin:\
 $PATH
 
-export EDITOR=vim
-export GIT_EDITOR=vim
+# ##########
+# # completions
+# _gc() {
+#   local cur=${COMP_WORDS[COMP_CWORD]}
+#   local branches
+#   branches=$(git for-each-ref --format='%(refname)' | \
+#     sed -e 's|refs/remotes/origin/||' -e 's|refs/heads/||' | \
+#     tr '\n' ' ' \
+#   )
+#   # shellcheck disable=SC2207
+#   COMPREPLY=( $(compgen -o default -W "$branches" -- $cur) )
+# }
+# complete -F _gc gc
 
-##########
-# completions
-_gc() {
-  local cur=${COMP_WORDS[COMP_CWORD]}
-  local branches=$(git for-each-ref --format='%(refname)' | \
-    sed -e 's|refs/remotes/origin/||' -e 's|refs/heads/||' | \
-    tr '\n' ' ' \
-  )
-  COMPREPLY=( $(compgen -o default -W "$branches" -- $cur) )
-}
-complete -F _gc gc
+if type brew &>/dev/null; then
+  HOMEBREW_PREFIX="$(brew --prefix)"
+  if [[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]]; then
+    # shellcheck disable=SC1090
+    source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
+  else
+    for COMPLETION in "${HOMEBREW_PREFIX}/etc/bash_completion.d/"*; do
+      # shellcheck disable=SC1090
+      [[ -r "$COMPLETION" ]] && source "$COMPLETION"
+    done
+  fi
+fi
