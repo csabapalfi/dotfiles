@@ -13,8 +13,7 @@ brew "go"
 brew "httpstat"
 brew "hub"
 brew "jq"
-# node@12 formula depends only on icu4c but it comes with small-icu built-in anyway
-brew "node@12", args: ["ignore-dependencies"] 
+brew "node@12"
 brew "openvpn"
 brew "shellcheck"
 brew "tfenv"
