@@ -87,27 +87,10 @@ $PATH
 
 # ##########
 # # completions
-# _gc() {
-#   local cur=${COMP_WORDS[COMP_CWORD]}
-#   local branches
-#   branches=$(git for-each-ref --format='%(refname)' | \
-#     sed -e 's|refs/remotes/origin/||' -e 's|refs/heads/||' | \
-#     tr '\n' ' ' \
-#   )
-#   # shellcheck disable=SC2207
-#   COMPREPLY=( $(compgen -o default -W "$branches" -- $cur) )
-# }
-# complete -F _gc gc
-
 if type brew &>/dev/null; then
   HOMEBREW_PREFIX="$(brew --prefix)"
   if [[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]]; then
     # shellcheck disable=SC1090
     source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
-  else
-    for COMPLETION in "${HOMEBREW_PREFIX}/etc/bash_completion.d/"*; do
-      # shellcheck disable=SC1090
-      [[ -r "$COMPLETION" ]] && source "$COMPLETION"
-    done
   fi
 fi
