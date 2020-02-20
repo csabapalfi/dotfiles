@@ -92,5 +92,6 @@ if type brew &>/dev/null; then
   if [[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]]; then
     # shellcheck disable=SC1090
     source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
+    __git_complete gc _git_checkout
   fi
 fi
