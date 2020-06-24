@@ -72,8 +72,8 @@ export GIT_EDITOR=vim
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH=\
+/Users/csabapalfi/Library/Python/3.7/bin:\
 /usr/local/opt/python/libexec/bin:\
-/usr/local/opt/node@12/bin:\
 ~/go/bin:\
 ./node_modules/.bin:\
 $NPM_PACKAGES/bin:\
